@@ -2,8 +2,7 @@ f=open("input/connexion.log","r")
 w=open("output/utilisateurs.txt","w")
 l=[]
 for line in f:
-    name=line.split(";")[1]
-    l.append(name)
+    l.append(line.split(";")[1])
 for elt in sorted(set(l)):
     w.write(f"{elt}\n")
 f.close()
