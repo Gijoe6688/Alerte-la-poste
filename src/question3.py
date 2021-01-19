@@ -12,7 +12,7 @@ for lin in c:
     name=lc[1].strip()
     if ip in l:
         l_suspect.append(name)
-l_suspect_unique=sorted(list(set(l_suspect)))
+l_suspect_unique=sorted(set(l_suspect))
 for elt in l_suspect_unique:
     n=l_suspect.count(elt)
     s.write(f"{elt};{n}\n")
