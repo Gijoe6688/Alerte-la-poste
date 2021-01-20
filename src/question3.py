@@ -1,12 +1,12 @@
 w=open("input/warning.txt","r")
 c=open("input/connexion.log","r")
 s=open("output/suspect.txt","w")
-l_suspect=[]
 # l=[]
 # for line in w:
 #     line=line.strip()
 #     l.append(line)
 l=[line.strip() for line in w]
+l_suspect=[]
 for lin in c:
     lc=lin.split(";")
     ip=lc[0].strip()
